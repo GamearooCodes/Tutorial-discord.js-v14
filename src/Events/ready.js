@@ -11,6 +11,7 @@ module.exports = {
      * @param {Client} client 
      */
     async run(client) {
+        require('../Utils/command')(client);
         new RamApi().version_check();
 
         //code here
