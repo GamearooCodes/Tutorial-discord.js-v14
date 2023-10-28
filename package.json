@@ -22,6 +22,7 @@
     "fs": "^0.0.1-security",
     "mysql2": "^2.3.3",
     "ram-api.js": "^9.0.0",
+    "ram-api2.js": "^0.1.0",
     "sequelize": "^6.21.3"
   }
 }
