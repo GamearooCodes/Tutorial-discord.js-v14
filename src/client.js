@@ -5,7 +5,7 @@ const { Client, GatewayIntentBits, Partials, Collection } = require('discord.js'
 class BotClient extends Client {
     constructor() {
         super({
-            intents: [GatewayIntentBits.Guilds],
+            intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessageReactions],
             partials: [Partials.User],
         })
         this.commands = new Collection();

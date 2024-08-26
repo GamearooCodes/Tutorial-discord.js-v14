@@ -13,7 +13,7 @@ module.exports = {
      * @param {*} extras 
      */
     async run(interaction, client, extras) {
-        let res = await new RamApi().hello('english').catch(err => new ConsoleLog().error(err));
+        let res = await new RamApi().helloAsync('english').catch(err => new ConsoleLog().errorAsync(err));
 
         interaction.reply({ content: res.text });
     }

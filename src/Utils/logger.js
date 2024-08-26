@@ -1,6 +1,6 @@
-const { Logs } = require("ram-api.js");
+const {  ExecuteLogger } = require("ram-api.js");
 
-class ConsoleLog extends Logs {
+class ConsoleLog extends ExecuteLogger {
     constructor() {
         super('Tutorial Bot')
     }

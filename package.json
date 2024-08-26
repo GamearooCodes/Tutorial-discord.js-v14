@@ -18,10 +18,11 @@
   },
   "homepage": "https://github.com/GamearooCodes/Tutorial-discord.js-v14#readme",
   "dependencies": {
+    "discord-giveaways": "^6.0.1",
     "discord.js": "^14.1.1",
     "fs": "^0.0.1-security",
     "mysql2": "^2.3.3",
-    "ram-api.js": "^9.0.0",
+    "ram-api.js": "^15.0.3",
     "ram-api2.js": "^0.1.0",
     "sequelize": "^6.21.3"
   }

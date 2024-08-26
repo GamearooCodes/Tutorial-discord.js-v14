@@ -39,7 +39,7 @@ module.exports = {
             case "8ball":
                 let q = options.getString('question');
 
-                let res = await apiclient._8ball('english').catch(err => logger.error(err));
+                let res = await apiclient._8ballAsync('english').catch(err => logger.errorAsync(err));
 
                 let embed = new EmbedBuilder()
                     .setColor("Random")

@@ -22,7 +22,7 @@ module.exports = {
         if (!command) {
             interaction.reply(`${commandName} was removed!`);
             commands.delete(interaction.commandId).then(cmd => {
-                new ConsoleLog().warn(`${commandName} was not found so i removed it`);
+                new ConsoleLog().warnAsync(`${commandName} was not found so i removed it`);
             })
             return;
         }

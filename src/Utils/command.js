@@ -11,7 +11,7 @@ const ConsoleLog = require("./logger");
 module.exports = (client) => {
     var commands = client.application.commands;
 
-    if (beta) commands = client.guilds.cache.get(devGuildId).commands;
+    if (beta) commands = client.guilds.cache.get(devGuildId)?.commands;
 
     readdirSync("./src/Commands/").forEach(dir => {
         const commands2 = readdirSync(`./src/Commands/${dir}/`).filter(f => f.endsWith('.js'));
@@ -29,7 +29,7 @@ module.exports = (client) => {
                 options
             })
 
-            new ConsoleLog().info(`Loaded Command ${name}`);
+            new ConsoleLog().infoAsync(`Loaded Command ${name}`);
         }
     })
 }
